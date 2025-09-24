@@ -11,7 +11,7 @@
 | `0x19`           | Unknown                                   | Custom packet?                                           | `FUN_140c670c0(this, packet)`                    |
 | `0x1B`           | Compressed or wrapped packet              | Reads byte 10 to determine actual type                   | Special-case handling                            |
 | `0x82`           | Unknown                                   | Possibly an error or internal RakNet message             | `RakNetClient::HandleError`                      |
-| `0x83`           | Unknown                                   | Possibly time sync                                       | `RakNetClient::HandleTimeSync`                   |
+| `0x83`           | HandleTimeSync                                   | Possibly time sync                                       | `RakNetClient::HandleTimeSync`                   |
 | `0x84`           | Frame Set Packet                | Custom payload                                           | `FUN_140c66dd0(this, packet, 0)`                 |
 | `0x85`           | User-defined packet type 1                | Custom payload                                           | `FUN_140c66dd0(this, packet, 1)`                 |
 | `0x86`           | Unknown                                   | Possibly ping/pong or control message                    | `FUN_140c6608c(this, packet)`                    |
