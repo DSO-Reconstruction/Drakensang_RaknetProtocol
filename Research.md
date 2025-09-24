@@ -8,7 +8,7 @@
 | `0x14`           | ID_NO_FREE_INCOMING_CONNECTIONS (alt)     | Server full again?                                       | Logs warning                                     |
 | `0x15`           | ID_DISCONNECTION_NOTIFICATION *(likely)* | Server actively disconnected this client                 | `RakNetClient::HandleDisconnectionByServer`     |
 | `0x16`           | ID_CONNECTION_LOST                        | Lost connection to server                                | Logs warning + `RakNetClient::HandleConnectionLost` |
-| `0x19`           | Unknown                                   | Custom packet?                                           | `FUN_140c670c0(this, packet)`                    |
+| `0x19`           | Raknet Protocol Version ?                                   | Custom packet?                                           | `FUN_140c670c0(this, packet)`                    |
 | `0x1B`           | Compressed or wrapped packet              | Reads byte 10 to determine actual type                   | Special-case handling                            |
 | `0x82`           | Unknown                                   | Possibly an error or internal RakNet message             | `RakNetClient::HandleError`                      |
 | `0x83`           | HandleTimeSync                                   | Possibly time sync                                       | `RakNetClient::HandleTimeSync`                   |
