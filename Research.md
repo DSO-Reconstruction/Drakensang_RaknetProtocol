@@ -10,7 +10,7 @@
 | `0x16`           | ID_CONNECTION_LOST                        | Lost connection to server                                | Logs warning + `RakNetClient::HandleConnectionLost` |
 | `0x19`           | ID_INCOMPATIBLE_PROTOCOL_VERSION                                   | Custom packet?                                           | `FUN_140c670c0(this, packet)`                    |
 | `0x1B`           | ID_TIMESTAMP              | Reads byte 10 to determine actual type                   | Special-case handling                            |
-| `0x82`           | PACKET_SERVER_IDENTIFY                                   | Possibly an error or internal RakNet message             | `RakNetClient::HandleError`                      |
+| `0x82`           | PACKET_SERVER_IDENTIFY                                   | May be DrasaOnlineLoginServer or DrasaCharacterService           | `RakNetClient::HandleError`                      |
 | `0x83`           | HandleTimeSync                                   | Possibly time sync                                       | `RakNetClient::HandleTimeSync`                   |
 | `0x84`           | Frame Set Packet                | Custom payload                                           | `FUN_140c66dd0(this, packet, 0)`                 |
 | `0x85`           | User-defined packet type 1                | Custom payload                                           | `FUN_140c66dd0(this, packet, 1)`                 |
