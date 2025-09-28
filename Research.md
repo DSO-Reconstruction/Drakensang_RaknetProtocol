@@ -14,7 +14,7 @@
 | `0x83`           | HandleTimeSync                                   | Possibly time sync                                       | `RakNetClient::HandleTimeSync`                   |
 | `0x84`           | Frame Set Packet                | Custom payload                                           | `FUN_140c66dd0(this, packet, 0)`                 |
 | `0x85`           | User-defined packet type 1                | Custom payload                                           | `FUN_140c66dd0(this, packet, 1)`                 |
-| `0x86`           | Unknown                                   | Possibly ping/pong or control message                    | `FUN_140c6608c(this, packet)`                    |
+| `0x86`           | Changing Map                                  | Changing map                    | `FUN_140c6608c(this, packet)`                    |
 | `0x87`           | Unknown                                   | Resets internal variable (`this->field232_0x120 = 0`)    | State reset                                      |
 | `0x88`           | Unknown                                   | Sets state + optionally triggers callback                | Sets field + optional call                       |
 | `0x89`           | Unknown                                   | Custom logic                                             | `FUN_140c66938(this, packet)`                    |
