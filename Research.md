@@ -14,7 +14,15 @@
 | `0x83`           | HandleTimeSync                                   | Possibly time sync                                       | `RakNetClient::HandleTimeSync`                   |
 | `0x84`           | Frame Set Packet                | Custom payload                                           | `FUN_140c66dd0(this, packet, 0)`                 |
 | `0x85`           | User-defined packet type 1                | Custom payload                                           | `FUN_140c66dd0(this, packet, 1)`                 |
-| `0x86`           | Changing Map                                  | Changing map                    | `FUN_140c6608c(this, packet)`                    |
+| `0x86`           | Changing Map                                  | Changing map                    | `struct MapChangePacket {
+    uint8_t message_id;        // 0x86
+    uint16_t map_name_len1;    // Little-endian
+    char map_name1[];          // Variable
+    uint16_t map_name_len2;    // Little-endian (duplicated)
+    char map_name2[];          // Variable
+    uint32_t map_type;         // 0x00, 0x01, 0x05, or 0xffffffff
+    uint8_t flag;              // Always 0x00 but not for a0000_char
+};`                    |
 | `0x87`           | Unknown                                   | Resets internal variable (`this->field232_0x120 = 0`)    | State reset                                      |
 | `0x88`           | Unknown                                   | Sets state + optionally triggers callback                | Sets field + optional call                       |
 | `0x89`           | Unknown                                   | Custom logic                                             | `FUN_140c66938(this, packet)`                    |
