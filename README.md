@@ -7,7 +7,7 @@ It focuses on reverse-engineering, protocol structure, and in-game communication
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 | File / Folder                  | Description                                                                 |
 |-------------------------------|-----------------------------------------------------------------------------|
@@ -17,14 +17,14 @@ It focuses on reverse-engineering, protocol structure, and in-game communication
 
 ---
 
-## 🙏 Credits & Thanks
+##  Credits & Thanks
 
-- 👥 **Minecraft community** — for public resources explaining RakNet internals.
-- 🛠️ **[DSO-Reconstruction](https://github.com/DSO-Reconstruction)** — for inspiration, reference, and collaborative research.
+-  **Minecraft community** — for public resources explaining RakNet internals.
+-  **[DSO-Reconstruction](https://github.com/DSO-Reconstruction)** — for inspiration, reference, and collaborative research.
 
 ---
 
-## 🧠 Goals
+##  Goals
 
 - Understand the **structure of RakNet packets** used in DSO.
 - Document known and custom **packet IDs, handlers, and use cases**.
@@ -32,14 +32,14 @@ It focuses on reverse-engineering, protocol structure, and in-game communication
 
 ---
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 This project is **not affiliated with Bigpoint or Drakensang Online**.  
 All trademarks belong to their respective owners. This repository is intended for educational and archival purposes only.
 
 ---
 
-## 📬 Contact
+##  Contact
 
 Feel free to open an issue or pull request if you have additional information, corrections, or improvements.
 
