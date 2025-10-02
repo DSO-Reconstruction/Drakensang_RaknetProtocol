@@ -20,7 +20,7 @@ It focuses on reverse-engineering, protocol structure, and in-game communication
 ##  Credits & Thanks
 
 -  **Minecraft community** — for public resources explaining RakNet internals.
--  **[DSO-Reconstruction](https://github.com/DSO-Reconstruction)** — for inspiration, reference, and collaborative research.
+-  **[DSO-Reconstruction](https://github.com/DSO-Reconstruction)** — for the love of the game
 
 ---
 
