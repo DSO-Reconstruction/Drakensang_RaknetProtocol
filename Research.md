@@ -1,6 +1,6 @@
 # 📦 RakNet Packet ID Handling 
 
-| Packet ID (Hex) | Constant Name *(guess)*                  | Description / Notes                                    | Handling Function                                |
+| Packet ID (Hex) | Constant Name *(guess)*                  | Description / Notes                                    | Handling Function       (NOT UPDATED)                         |
 |------------------|-------------------------------------------|----------------------------------------------------------|--------------------------------------------------|
 | `0x10`           | ID_REMOTE_DISCONNECTION_NOTIFICATION      | Remote peer disconnected cleanly                         | `FUN_140c66458(this, packet)`                    |
 | `0x11`           | ID_CONNECTION_ATTEMPT_FAILED              | Connection attempt failed                                | Logs warning + `RakNetClient::HandleConnectionFailed` |
