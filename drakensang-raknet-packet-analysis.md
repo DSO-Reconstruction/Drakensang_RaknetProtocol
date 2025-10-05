@@ -16,7 +16,7 @@
 | `0x85`           | User-defined packet type 1                | Custom payload                                           | `FUN_140c66dd0(this, packet, 1)`                 |
 | `0x86`           | Changing Map                                  | Changing map                    |                     |
 | `0x87`           | Unknown                                   | Resets internal variable (`this->field232_0x120 = 0`)    | State reset                                      |
-| `0x88`           | Unknown                                   | Sets state + optionally triggers callback                | Sets field + optional call                       |
+| `0x88`           | Send map changing validation ?                                  | Sets state + optionally triggers callback                | Sets field + optional call                       |
 | `0x89`           | Unknown                                   | Custom logic                                             | `FUN_140c66938(this, packet)`                    |
 | `0x8a`           | PACKET_CLIENT_IDENTIFY                  | Identify the client with a parameter DrasaOnlineClient     | `FUN_140c66b18(this, packet)`                    |
 | `0x8b`           | Send local config ?                     | Send the computer specs and also the spellbar              | `FUN_140c66b18(this, packet)`                    |
